@@ -1,306 +1,32 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Hello, World!</title>
-        <!-- CSS Styles -->
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Programming Languages Comparason</title>
+        <!-- CSS Styly -->
+        <link rel="stylesheet" href="../style.css">
         
-        <!-- Prism JavaScript library -->
-        <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
-        <!-- Language components for Prism -->
-        <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-lua.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-c.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-kotlin.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-go.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-csharp.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-cpp.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-ruby.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-swift.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-rust.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-sql.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-basic.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-scala.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-pascal.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-nasm.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
-
+        <!-- Prism.js HIGHLIGHTER -->
+        <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css">
     </head>
-
     <body>
         <header>
-            <h1>"Hello, World!"</h1>
-            <h2>in 20 programming languages</h2>
+            <h1>Programming Languages</h1>
+            <h2>Comparason</h2>
         </header>
 
         <main>
-            <!-- Bash -->
-            <div class="code">
-                <h3>
-                    <img src="images/Bash_Logo_Colored.svg.png" alt="Bash logo">
-                    <p>Bash</p>
-                </h3>
-                <pre><code class="language-bash">echo "Hello, World!"</code></pre>
-            </div>
-
-	        <!-- Basic -->
-            <div class="code">
-                <h3>
-                    <img src="images/Basic Logo.webp" alt="Basic logo">
-                    <p>Basic</p>
-                </h3>
-                <pre><code class="language-basic">PRINT "Hello, World!"</code></pre>
-			</div>
-
-            <!-- Ruby -->
-            <div class="code">
-                <h3>
-                    <img src="images/Ruby_logo.png" alt="Ruby logo">
-                    <p>Ruby</p>
-                </h3>
-                <pre><code class="language-ruby">puts "Hello, World!"</code></pre>
-            </div>
-
-            <!-- Python -->
-            <div class="code">
-                <h3>
-                    <img src="images/python-logo.png" alt="Python logo">
-                    <p>Python</p>
-                </h3>
-                <pre><code class="language-python">print("Hello, World!")</code></pre>
-            </div>
-
-            <!-- Swift -->
-            <div class="code">
-                <h3>
-                    <img src="images/swift.svg" alt="Swift Logo">
-                    <p>Swift</p>
-                </h3>
-                <pre><code class="language-swift">print("Hello, World!")</code></pre>
-            </div>
-
-            <!-- Lua -->
-            <div class="code">
-                <h3>
-                    <img src="images/Lua-Logo.svg" alt="Lua logo">
-                    <p>Lua</p>
-                </h3>
-                <pre><code class="language-lua">print("Hello, World!")</code></pre>
-            </div>
-
-            <!-- SQL -->
-            <div class="code">
-                <h3>
-                    <img src="images/sql-icon.png" alt="SQL logo">
-                    <p>SQL</p>
-                </h3>
-                <pre><code class="language-sql">SELECT 'Hello, World!';</code></pre>
-            </div>
-            
-            <!-- JavaScript -->
-            <div class="code">
-                <h3>
-                    <img src="images/Javascript_Logo.png" alt="JavaScript logo">
-                    <p>Javascript</p>
-                </h3>
-                <pre><code class="language-javascript">console.log("Hello, World!")</code></pre>
-            </div>
-
-            <!-- Rust -->
-            <div class="code">
-                <h3>
-                    <img src="images/Rust-Emblem.png" alt="Rust logo">
-                    <p>Rust</p>
-                </h3>
-                <pre><code class="language-rust">fn main() {
-    println!("Hello, World!");
-}</code></pre>
-            </div>
-
-            <!-- Pascal -->
-            <div class="code">
-                <h3>
-                    <img src="images/Pascal logo.png" alt="Pascal logo">
-                    <p>Pascal</p>
-                </h3>
-                <pre><code class="language-pascal">program Hello;
-begin
-  writeln ('Hello, World!')
-end.</code></pre>
-            </div>
-
-            <!-- Kotlin -->
-            <div class="code">
-                <h3>
-                    <img src="images/Kotlin-Logo.svg" alt="Kotlin logo">
-                    <p>Kotlin</p>
-                </h3>
-                <pre><code class="language-kotlin">fun main(args: Array&lt;String&gt;) {
-    println("Hello, World!")
-}</code></pre>
-            </div>
-
-            <!-- C -->
-            <div class="code">
-                <h3>
-                    <img src="images/C-Logo.webp" alt="C logo">
-                    <p>C</p>
-                </h3>
-                <pre><code class="language-c">#include &lt;stdio.h&gt;
-int main()
-{
-    printf("Hello, World!");
-}</code></pre>
-            </div>
-
-            <!-- GO -->
-            <div class="code">
-                <h3>
-                    <img src="images/Go-Logo.png" alt="Go logo">
-                    <p>GO</p>
-                </h3>
-                <pre><code class="language-go">package main
-import "fmt"
-
-func main() {
-	fmt.Printf("Hello, World!")
-}</code></pre>
-            </div>
-
-            <!-- C++ -->
-            <div class="code">
-                <h3>
-                    <img src="images/CPP-Logo.webp" alt="C++ logo">
-                    <p>C++</p>
-                </h3>
-                <pre><code class="language-cpp">#include &lt;iostream&gt;
-using namespace std;
-
-int main() 
-{
-    cout &lt;&lt; "Hello, World!";
-    return 0;
-}</code></pre>
-            </div>
-
-            <!-- Scala -->
-            <div class="code">
-                <h3>
-                    <img src="images/Scala logo.svg" alt="Scala logo">
-                    <p>Scala</p>
-                </h3>
-                <pre><code class="language-scala">object HelloWorld {
-	def main(args: Array[String]): Unit = {
-	println("Hello, World!")
-	}
-}</code></pre>
-            </div>
-            
-            <!-- Java -->
-            <div class="code">
-                <h3>
-                    <img src="images/Java-Logo.svg" alt="Java logo">
-                    <p>Java</p>
-                </h3>
-                <pre><code class="language-java">import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}</code></pre>
-            </div>
-
-            <!-- HTML -->
-            <div class="code">
-                <h3>
-                    <img src="images/HTML5 Logo.webp" alt="HTML logo">
-                    <p>HTML</p>
-                </h3>
-                <pre><code class="language-markup">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Hello, World!&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    Hello, World!
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-            </div>
-
-            <!-- CSS -->
-            <div class="code">
-                <h3>
-                    <img src="images/HTML5 Logo.webp" alt="HTML logo">
-                    <p>HTML / CSS</p>
-                    <img src="images/CSS logo.webp" alt="CSS logo">
-                </h3>
-                <pre><code class="language-markup">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Hello, World!&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;style&gt;
-      .greeting::after {
-        content: "Hello, World!";
-      }
-    &lt;/style&gt;
-    &lt;div class="greeting"&gt;&lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-            </div>
-
-            <!-- C# -->
-            <div class="code">
-                <h3>
-                    <img src="images/csharp.webp" alt="C# logo">
-                    <p>C#</p>
-                </h3>
-                <pre><code class="language-csharp">using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.RegularExpressions;
-
-namespace HelloWorld
-{
-	public class Program
-	{
-		public static void Main(string[] args)
-		{
-			Console.WriteLine("Hello, World!");
-		}
-	}
-}</code></pre>
-            </div>
-
-            <!-- Assembly -->
-            <div class="code">
-                <h3>
-                    <img src="images/assembly.svg" alt="Assembly logo">
-                    <p>Assembly</p>
-                </h3>
-                <pre><code class="language-nasm">section .data
-	hello:     db 'Hello, World!',10
-	helloLen:  equ $-hello
-
-section .text
-	global _start
-
-_start:
-	mov eax,4
-	mov ebx,1
-	mov ecx,hello
-	mov edx,helloLen
-	
-	int 80h
-	mov eax,1
-	mov ebx,0
-	int 80h;</code></pre>
+            <div id="links">
+                <a href="hello-world/">Hello, World!</a>
+                <a href="about-langs/">About Languages</a>
+                <a href="variables/">Variables</a>
+                <a href="functions/">Functions</a>
+                <a href="if-statements/basic/">If Statements (Basic)</a>
+                <a href="if-statements/advanced/">If Statements (Advanced)</a>
+                <a href="console-input/">Console Input</a>
             </div>
         </main>
     </body>

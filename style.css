@@ -29,6 +29,14 @@ header {
     overflow-x: auto;
 }
 
+.code a {
+    color: #33ddff;
+}
+
+.code ul li {
+    margin-left: 30px;
+}
+
 h3 {
     display: flex;
     align-items: center;
@@ -59,4 +67,29 @@ main {
     flex-direction: column;
     gap: 30px;
     margin-top: 30px;
+}
+
+#links {
+    display: grid;
+    gap: 2rem;
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #eee;
+    border-radius: 20px;
+}
+
+#links a {
+    text-align: center;
+    transition: 0.1s;
+    background-color: #ddd;
+    border-radius: 20px;
+    padding: 2rem;
+    color: #000;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+#links a:hover {
+    background-color: #ccc;
+    font-weight: bold;
 }

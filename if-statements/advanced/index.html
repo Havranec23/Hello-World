@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <title>Functions</title>
+        <!-- CSS Styly -->
+        <link rel="stylesheet" href="../../style.css">
+        
+        <!-- Prism.js HIGHLIGHTER -->
+        <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>If Statements</h1>
+            <h2>in programming languages</h2>
+        </header>
+
+        <main>
+            <!-- C -->
+            <div class="code">
+                <h3>
+                    <img src="../../images/C-Logo.webp" alt="C logo">
+                    <p>C</p>
+                </h3>
+                <pre><code class="language-c">printf(
+number == 1 || number == 2 ? "Number is %d\n" : "Number isn't 1 or 2\n",
+number
+);</code></pre>
+            </div>
+
+            <!-- Python -->
+            <div class="code">
+                <h3>
+                    <img src="../../images/python-logo.png" alt="Python logo">
+                    <p>Python</p>
+                </h3>
+                <pre><code class="language-python">responses = {1: "Number is 1", 2: "Number is 2"}
+print(responses.get(number, "Number isn't 1 or 2"))</code></pre>
+            </div>
+
+            <!-- Python -->
+            <div class="code">
+                <h3>
+                    <img src="../../images/python-logo.png" alt="Python logo">
+                    <p>Python</p>
+                </h3>
+                <pre><code class="language-python">match number:
+    case 1 | 2:
+        print(f"Number is {number}")
+    case _:
+        print("Number isn't 1 or 2")</code></pre>
+            </div>
+
+            <!-- Java -->
+            <div class="code">
+                <h3>
+                    <img src="../../images/Java-Logo.svg" alt="Java logo">
+                    <p>Java (14+)</p>
+                </h3>
+                <pre><code class="language-java">String message = switch (number) {
+    case 1, 2 -&lt; "Number is " + number;
+    default -&lt; "Number isn't 1 or 2";
+};
+System.out.println(message);</code></pre>
+            </div>
+
+            <!-- Java -->
+            <div class="code">
+                <h3>
+                    <img src="../../images/Java-Logo.svg" alt="Java logo">
+                    <p>Java</p>
+                </h3>
+                <pre><code class="language-java">Map&lt;Integer, String&gt; messages = Map.of(
+    1, "Number is 1",
+    2, "Number is 2"
+);
+
+System.out.println(messages.getOrDefault(number, "Number isn't 1 or 2"));</code></pre>
+            </div>
+
+            <!-- C -->
+            <div class="code">
+                <h3>
+                    <img src="../../images/C-Logo.webp" alt="C logo">
+                    <p>C</p>
+                </h3>
+                <pre><code class="language-c">switch (number) {
+    case 1:
+    case 2:
+        printf("Number is %d\n", number);
+        break;
+    default:
+        printf("Number isn't 1 or 2\n");
+        break;
+}</code></pre>
+            </div>
+        </main>
+    </body>
+</html>

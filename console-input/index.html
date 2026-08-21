@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Console Inputs</title>
+        <!-- CSS Styly -->
+        <link rel="stylesheet" href="../style.css">
+        
+        <!-- Prism.js HIGHLIGHTER -->
+        <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Console Inputs</h1>
+            <h2>in programming languages</h2>
+        </header>
+
+        <main>
+            <!-- Python -->
+            <div class="code">
+                <h3>
+                    <img src="../images/python-logo.png" alt="Python logo">
+                    <p>Python</p>
+                </h3>
+                <pre><code class="language-python">username = input("Enter your username: ")
+print(f"Your username is {username}", end="")</code></pre>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="code">
+                <h3>
+                    <img src="../images/Javascript_Logo.png" alt="JavaScript logo">
+                    <p>JavaScript</p>
+                </h3>
+                <pre><code class="language-javascript">const username = prompt("Enter your username:");
+console.log(`Your username is ${username}`);</code></pre>
+            </div>
+
+            <!-- Lua -->
+            <div class="code">
+                <h3>
+                    <img src="../images/Lua-Logo.svg" alt="Lua logo">
+                    <p>Lua</p>
+                </h3>
+                <pre><code class="language-lua">io.write("Enter your username: ")
+local username = io.read()
+
+io.write("Your username is " .. username)</code></pre>
+            </div>
+
+            <!-- PHP -->
+            <div class="code">
+                <h3>
+                    <img src="../images/PHP-logo.svg" alt="PHP logo">
+                    <p>PHP</p>
+                </h3>
+                <pre><code class="language-php">&lt;?php
+echo "Enter your username: ";
+$username = stream_get_line(STDIN, 1024, PHP_EOL);
+
+echo "Your username is " . $username;</code></pre>
+            </div>
+
+            <!-- TypeScript -->
+            <div class="code">
+                <h3>
+                    <img src="../images/Typescript.svg" alt="TypeScript logo">
+                    <p>TypeScript</p>
+                </h3>
+                <pre><code class="language-php">const username: string | null = prompt("Enter your username:");
+
+if (username !== null) {
+    console.log(`Your username is ${username}`);
+}</code></pre>
+            </div>
+
+            <!-- Kotlin -->
+            <div class="code">
+                <h3>
+                    <img src="../images/Kotlin-Logo.svg" alt="Kotlin logo">
+                    <p>Kotlin</p>
+                </h3>
+                <pre><code class="language-kotlin">fun main() {
+    print("Enter your username: ")
+    val username = readln()
+
+    print("Your username is $username")
+}</code></pre>
+            </div>
+
+            <!-- Pascal -->
+            <div class="code">
+                <h3>
+                    <img src="../images/Pascal logo.png" alt="Pascal logo">
+                    <p>Pascal</p>
+                </h3>
+                <pre><code class="language-pascal">program Main;
+var
+  username: string;
+begin
+  write('Enter your username: ');
+  readln(username);
+  
+  write('Your username is ', username);
+end.</code></pre>
+            </div>
+
+            <!-- C# -->
+            <div class="code">
+                <h3>
+                    <img src="../images/csharp.webp" alt="C# logo">
+                    <p>C#</p>
+                </h3>
+                <pre><code class="language-csharp">using System;
+
+class Program {
+    static void Main() {
+        Console.Write("Enter your username: ");
+        string username = Console.ReadLine();
+
+        Console.Write("Your username is " + username);
+    }
+}</code></pre>
+            </div>
+
+            <!-- C++ -->
+            <div class="code">
+                <h3>
+                    <img src="../images/CPP-Logo.webp" alt="C++ logo">
+                    <p>C++</p>
+                </h3>
+                <pre><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+int main() {
+    std::string username;
+    
+    std::cout &lt;&lt; "Enter your username: ";
+    std::getline(std::cin, username);
+    
+    std::cout &lt;&lt; "Your username is " &lt;&lt; username;
+    
+    return 0;
+}</code></pre>
+            </div>
+
+            <!-- C -->
+            <div class="code">
+                <h3>
+                    <img src="../images/C-Logo.webp" alt="C logo">
+                    <p>C</p>
+                </h3>
+                <pre><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+int main() {
+    char username[50];
+
+    printf("Enter your username: ");
+    fgets(username, sizeof(username), stdin);
+
+    username[strcspn(username, "\n")] = '\0';
+
+    printf("Your username is %s", username);
+
+    return 0;
+}</code></pre>
+            </div>
+
+            <!-- Rust -->
+            <div class="code">
+                <h3>
+                    <img src="../images/Rust-Emblem.png" alt="Rust logo">
+                    <p>Rust</p>
+                </h3>
+                <pre><code class="language-rust">use std::io::{self, Write};
+
+fn main() {
+    print!("Enter your username: ");
+    io::stdout().flush().unwrap();
+
+    let mut username = String::new();
+    io::stdin().read_line(&mut username).unwrap();
+    
+    let username = username.trim_end(); 
+
+    print!("Your username is {}", username);
+}</code></pre>
+            </div>
+
+            <!-- Java -->
+            <div class="code">
+                <h3>
+                    <img src="../images/Java-Logo.svg" alt="Java logo">
+                    <p>Java</p>
+                </h3>
+                <pre><code class="language-java">import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter your username: ");
+        String username = scanner.nextLine();
+
+        System.out.print("Your username is " + username);
+
+        scanner.close();
+    }
+}</code></pre>
+            </div>
+
+            <!-- GO -->
+            <div class="code">
+                <h3>
+                    <img src="../images/Go-Logo.png" alt="GO logo">
+                    <p>GO</p>
+                </h3>
+                <pre><code class="language-go">package main
+
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strings"
+)
+
+func main() {
+	reader := bufio.NewReader(os.Stdin)
+
+	fmt.Print("Enter your username: ")
+	username, _ := reader.ReadString('\n')
+	username = strings.TrimSpace(username)
+
+	fmt.Print("Your username is " + username)
+}</code></pre>
+            </div>
+
+            <!-- Luau -->
+            <div class="code">
+                <h3>
+                    <img src="../images/Luau.webp" alt="Luau logo">
+                    <p>Luau (Roblox Studio)</p>
+                </h3>
+                <pre><code class="language-lua">local screenGui = Instance.new("ScreenGui")
+local textBox = Instance.new("TextBox")
+local textLabel = Instance.new("TextLabel")
+
+textBox.Size = UDim2.new(0, 200, 0, 50)
+textLabel.Size = UDim2.new(0, 200, 0, 50)
+textLabel.Position = UDim2.new(0, 0, 0, 60)
+
+textBox.Parent = screenGui
+textLabel.Parent = screenGui
+screenGui.Parent = script.Parent
+
+textBox.FocusLost:Connect(function(enterPressed: boolean)
+	if enterPressed then
+		local username: string = textBox.Text
+		textLabel.Text = "Your username is " .. username
+	end
+end)
+</code></pre>
+            </div>
+
+            <!-- Assembly -->
+            <div class="code">
+                <h3>
+                    <img src="../images/assembly.svg" alt="Assembly logo">
+                    <p>Assembly</p>
+                </h3>
+                <pre><code class="language-nasm">section .data
+    prompt db "Enter your username: ", 0
+    prompt_len equ $ - prompt
+    
+    output_msg db "Your username is ", 0
+    output_len equ $ - output_msg
+
+section .bss
+    username resb 64
+
+section .text
+    global _start
+
+_start:
+    mov rax, 1
+    mov rdi, 1
+    mov rsi, prompt
+    mov rdx, prompt_len
+    syscall
+
+    mov rax, 0
+    mov rdi, 0
+    mov rsi, username
+    mov rdx, 64
+    syscall
+    mov rbx, rax
+
+    mov rax, 1
+    mov rdi, 1
+    mov rsi, output_msg
+    mov rdx, output_len
+    syscall
+
+    mov rax, 1
+    mov rdi, 1
+    mov rsi, username
+    mov rdx, rbx
+    syscall
+
+    mov rax, 60
+    xor rdi, rdi
+    syscall</code></pre>
+            </div>
+        </main>
+    </body>
+</html>
